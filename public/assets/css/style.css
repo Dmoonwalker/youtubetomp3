@@ -1,0 +1,78 @@
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 800px;
+    margin-top: 50px;
+}
+.card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: #219ebc;
+    border-color: #219ebc;
+}
+.btn-primary:hover {
+    background-color: #023047;
+    border-color: #023047;
+}
+.btn-dark{
+    background-color: #000000;
+}
+.progress {
+    height: 20px;
+}
+.progress-bar {
+    width: 0%;
+}
+.info-section {
+    margin-top: 30px;
+}
+.info-section h4 {
+    margin-bottom: 15px;
+}
+.info-section p {
+    margin-bottom: 10px;
+}
+.video-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.video-item img {
+    margin-right: 15px;
+    width: 100px;
+    height: 56px;
+    object-fit: cover;
+}
+.video-item h5 {
+    flex-grow: 1;
+    margin: 0;
+}
+.video-item .btn {
+    float: right;
+    margin-left: 10px;
+}
+.video-item input[type="checkbox"] {
+    margin-right: 15px;
+}
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+    cursor: not-allowed;
+}
+.status-pending {
+    margin-right: 15px;
+    color: #ffb703;
+}
+.status-finished {
+    margin-right: 15px;
+    color: #fb8500;
+}
