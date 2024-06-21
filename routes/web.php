@@ -13,3 +13,4 @@ Route::get('/download-file/{file_name}', [DownloadController::class, 'getFile'])
 Route::get('/comments', [CommentController::class, 'index']);
 Route::post('/comments', [CommentController::class, 'store']);
 Route::get('/faq', [PageAddons::class, 'faq']);
+Route::post('/visits', [PageAddons::class, 'getVisits']);

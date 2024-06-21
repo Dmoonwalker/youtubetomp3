@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
+use App\Models\Visit;
 use File;
 use ZipArchive;
 
@@ -20,6 +21,12 @@ class DownloadController extends Controller
     public function index()
     {
         return view('index');
+        Visit::create([
+            'ip_address' => $request->ip(),
+            'user_agent' => $request->userAgent(),
+            'visited_at' => Carbon::now()
+        ]);
+
     }
 
     /**
